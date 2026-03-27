@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORCS UK Leaderboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #0b1a8f;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .leaderboard-container {
+            position: relative;
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+            aspect-ratio: 16 / 9;
+            background-image: url('blank-board.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .data-overlay {
+            position: absolute;
+            top: 28.1%;    
+            bottom: 13.8%; 
+            left: 13.6%;   
+            right: 9.3%;   
+            display: grid;
+            grid-template-rows: repeat(10, 1fr); 
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 9.5% 15.5% 12.5% 15% 9.5% 18% 20%;
+            height: 100%;
+            min-height: 0; 
+        }
+
+        .cell {
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            font-size: 1.05vw; 
+            font-weight: 500; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px; 
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .cell img {
+            max-height: 2vw !important; 
+            width: auto !important;   
+            margin: 0 4px; 
+            object-fit: contain;
+            /* This zooms the image to size. */
+            transform: scale(3.4); 
+        }
+
+        .vid-cell {
+            position: relative;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-link {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            text-decoration: none;
+        }
+        
+        .vid-cell:hover { background-color: rgba(255,255,255,0.05); }
+
+    </style>
+</head>
+<body>
+
+    <div class="leaderboard-container">
+        <div class="data-overlay">
+            
+            <!-- ROW 1 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 1</div>
+                <div class="cell">University 1</div>
+                <div class="cell"><img src="badge.png"></div> 
+                <div class="cell">1:28:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 2</div>
+                <div class="cell">University 2</div>
+                <div class="cell"></div> 
+                <div class="cell">1:35:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 3</div>
+                <div class="cell">University 3</div>
+                <div class="cell"></div>
+                <div class="cell">1:40:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 4</div>
+                <div class="cell">University 4</div>
+                <div class="cell"></div>
+                <div class="cell">1:45:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 5 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 5</div>
+                <div class="cell">University 5</div>
+                <div class="cell"></div>
+                <div class="cell">1:50:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 6 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 6</div>
+                <div class="cell">University 6</div>
+                <div class="cell"></div>
+                <div class="cell">1:55:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 7 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 7</div>
+                <div class="cell">University 7</div>
+                <div class="cell"></div>
+                <div class="cell">2:28:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 8 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 8</div>
+                <div class="cell">University 8</div>
+                <div class="cell"></div>
+                <div class="cell">2:30:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 9 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 9</div>
+                <div class="cell">University 9</div>
+                <div class="cell"></div>
+                <div class="cell">2:35:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+            <!-- ROW 10 -->
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell">Team 10</div>
+                <div class="cell">University 10</div>
+                <div class="cell"></div>
+                <div class="cell">2:40:234</div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+                <div class="vid-cell"><a href="https://www.youtube.com/" target="_blank" class="video-link"></a></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
